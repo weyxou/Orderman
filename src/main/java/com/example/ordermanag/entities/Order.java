@@ -19,7 +19,6 @@ public class Order {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Конструкторы
     public Order() {}
 
     public Order(String client, Double totalAmount, OrderStatus status) {
@@ -28,12 +27,12 @@ public class Order {
         this.status = status;
     }
 
-    // Геттеры и сеттеры
     public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public void setId(Long id)
+    { this.id = id; }
 
-    public String getClient() { return client; }  // Геттер для client
-    public void setClient(String client) { this.client = client; }  // Сеттер для client
+    public String getClient() { return client; }
+    public void setClient(String client) { this.client = client; }
 
     public Double getTotalAmount() { return totalAmount; }
     public void setTotalAmount(Double totalAmount) { this.totalAmount = totalAmount; }
