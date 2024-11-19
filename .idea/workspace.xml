@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8820fdc-720c-4e87-956d-fae2a63dc47c" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/services/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f8820fdc-720c-4e87-956d-fae2a63dc47c" name="Changes" comment="add authentication and authorization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ordermanag/services/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731151075096</updated>
       <workItem from="1731151076215" duration="14891000" />
-      <workItem from="1731935096595" duration="12252000" />
+      <workItem from="1731935096595" duration="15151000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -119,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731155589600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add authentication and authorization">
+      <option name="closed" value="true" />
+      <created>1731950811301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731950811301</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="add authentication and authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="add authentication and authorization" />
   </component>
 </project>

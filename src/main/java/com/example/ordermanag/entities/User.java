@@ -8,16 +8,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "users", uniqueConstraints = {
-        @UniqueConstraint(columnNames = {"username"})
-})
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "users")
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User {
 
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;

@@ -6,8 +6,6 @@ import com.example.ordermanag.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -47,15 +45,7 @@ public class OrderController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Order>> getOrders() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-
-        if (authentication.getAuthorities().stream()
-                .anyMatch(auth -> auth.getAuthority().equals("ADMIN"))) {
-            return new ResponseEntity<>(orderRepository.findAll(), HttpStatus.OK);
-        }
-
-        String username = authentication.getName();
-        return new ResponseEntity<>(orderRepository.findByClient(username), HttpStatus.OK);
+    public List<Order> getAll(){
+        return orderRepository.findAll();
     }
 }

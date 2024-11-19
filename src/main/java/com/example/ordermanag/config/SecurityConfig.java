@@ -24,8 +24,11 @@ public class SecurityConfig {
         http.authorizeHttpRequests(
                 req -> req
                         .requestMatchers(HttpMethod.POST, "/api/v1/auth/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/api/v1/admin/**").hasAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/api/v1/orders/**").hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/v1/orders/**").hasAuthority("USER")
+                        .requestMatchers(HttpMethod.GET, "/api/v1/orders/**").hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/v1/orders/**").hasAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/v1/orders/**").hasAuthority("ADMIN")
+                        .requestMatchers("/api/v1/orders/status/**").hasAuthority("ADMIN")
                         .anyRequest().authenticated()
         );
         http.httpBasic(Customizer.withDefaults());
