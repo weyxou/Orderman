@@ -30,3 +30,6 @@ Conclusion
 This project implements the main functions for managing orders in an online store. 
 The API uses REST principles to create a simple and user-friendly interface for working with orders and users, 
 and also implements a basic authentication and authorization system to restrict access to certain operations.
+
+Video:
+https://youtu.be/4QU0EyvVkpo?si=lxcGFZ07Bcg7AMM4
